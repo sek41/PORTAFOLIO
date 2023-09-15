@@ -1,71 +1,13 @@
-/* Estilos personalizados */
-body {
-    background-color: #f1f1f1;
-    color: #333;
-    font-family: Arial, sans-serif;
+body{
+    background-color: rgb(126, 126, 126);
 }
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-main {
-    margin: 20px;
-}
-
-section {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 20px;
-    overflow: hidden; /* Para evitar que las imágenes se salgan */
-    display: inline-block;
-}
-
-#presentacion {
-    background-color: #3b5998;
-    color: #fff;
-}
-
-#presentacion img {
-    float: right;
-    margin-left: 20px;
-    max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
-}
-
-#presentacion p {
-    text-align: left;
-    margin-top: 0; /* Elimina el margen superior */
-}
-
-#presentacion h2 {
-    margin-bottom: 10px;
-}
-
-img {
-    float: left;
-    margin-right: 20px;
-    max-height: 100%; /* Ajusta la imagen al ancho del contenedor */
-}
-
-a {
-    color: #3b5998;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    font-size: larger;
+    font-weight: 300;
 }
 #presentacion {
     display: flex;
@@ -75,12 +17,38 @@ footer {
 }
 
 #presentacion img {
-    max-width: 100%;
+    max-width: 650px;
     height: 100%;
     object-fit: cover;
+}
+#presentacion div {
+   margin-left: 20px;
 }
 
 #presentacion h2,
 #presentacion p {
     flex: 1;
+}
+#proyecto {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+
+#proyecto img {
+    margin-left: auto;
+    max-width: 500px;
+    height: 100%;
+}
+
+#proyecto div {
+    flex: 1;
+    margin-right: auto;
+}
+section{
+     margin-top: 30px;
+     border: 5px solid blue;
+     background-color: rgb(33, 156, 197);
+     border-radius: 20px;
 }
